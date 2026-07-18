@@ -1,0 +1,4 @@
+# crypto / fintech — crypto exchanges and fintech-specific bounty programs
+"bug bounty" intext:"BTC" OR "ETH" OR "USDT" OR crypto OR reward
+intext:"cryptocurrency" "bug bounty"
+intext:"security vulnerability report" (exchange OR crypto OR blockchain OR token)
