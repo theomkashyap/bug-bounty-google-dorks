@@ -1,0 +1,12 @@
+# rewards / swag / money signals — signals that a program actually pays, not just a thank-you page
+intext:"responsible disclosure" "bounty" "reward"
+intext:"we offer a bounty"
+intext:"security vulnerability" "eligible for reward"
+intext:"you may be eligible for monetary compensation"
+intext:"CVSS score" AND "eligible for a reward" -hackerone -bugcrowd
+"responsible disclosure" AND (monetary OR cash OR "gift card" OR crypto OR BTC)
+"If you discover a vulnerability" AND (swag OR "hall of fame" OR monetary)
+responsible disclosure hall of fame
+inurl:"bug bounty" intext:"₹" OR intext:"rupees" OR intext:"INR"
+inurl:"bug bounty" intext:"$" inurl:/security
+inurl:"bug bounty" intext:"€" inurl:/security
