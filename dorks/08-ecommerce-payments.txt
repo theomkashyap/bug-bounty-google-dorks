@@ -1,0 +1,4 @@
+# e-commerce / payments — online stores and payment/checkout flows
+intext:"bug bounty" (shop OR store OR ecommerce)
+intext:"responsible disclosure" (payment OR checkout OR "online store")
+intext:"if you find a vulnerability" (bank OR payment)
