@@ -1,8 +1,4 @@
-# bug-bounty-google-dorks — all-dorks.txt
-# Combined list, one dork per line. Lines starting with # are comments/section headers.
-# Swap example.com for a real domain where relevant (see section 4).
-
-# 1. general discovery
+# general discovery — broad dorks for finding any public security/disclosure/bounty page
 inurl:/.well-known/security.txt
 inurl:/.well-known/security.txt intext:bounty -hackerone -bugcrowd -synack
 inurl:security.txt intext:"mailto" -github.com -wikipedia.org -portswigger.net -magento
@@ -24,67 +20,3 @@ intext:"we take security very seriously"
 "vulnerability reporting policy"
 "vulnerability disclosure program" AND (bounty OR reward OR swag OR "hall of fame")
 site:responsibledisclosure.com
-
-# 2. rewards / swag / money signals
-intext:"responsible disclosure" "bounty" "reward"
-intext:"we offer a bounty"
-intext:"security vulnerability" "eligible for reward"
-intext:"you may be eligible for monetary compensation"
-intext:"CVSS score" AND "eligible for a reward" -hackerone -bugcrowd
-"responsible disclosure" AND (monetary OR cash OR "gift card" OR crypto OR BTC)
-"If you discover a vulnerability" AND (swag OR "hall of fame" OR monetary)
-responsible disclosure hall of fame
-inurl:"bug bounty" intext:"₹" OR intext:"rupees" OR intext:"INR"
-inurl:"bug bounty" intext:"$" inurl:/security
-inurl:"bug bounty" intext:"€" inurl:/security
-
-# 3. self-hosted programs (own page, platform running behind the scenes)
-"powered by bugcrowd" -site:bugcrowd.com
-"powered by hackerone" -site:hackerone.com
-"powered by synack" -site:synack.com
-"powered by yeswehack" -site:yeswehack.com
-"powered by federacy" -site:federacy.com
-"powered by intigriti" -site:intigriti.com
-intext:"Powered by Bug Bounty HQ" OR "Powered by disclose.io"
-intext:"managed by huntr.dev"
-inurl:/hackerone.yml -site:hackerone.com
-inurl:/bug-bounty.json
-inurl:/vdp.json
-
-# 4. targeting one specific company (swap example.com for real domain)
-site:example.com inurl:security
-site:example.com "responsible disclosure"
-site:example.com filetype:pdf OR filetype:doc OR filetype:docx OR filetype:xlsx OR filetype:csv OR filetype:pptx
-site:example.com ext:txt "contact"
-
-# 5. gov / edu / finance
-site:gov.uk "responsible disclosure"
-site:gov.in "vulnerability disclosure"
-inurl:.gov "responsible disclosure" OR "vulnerability disclosure program" OR "bug bounty"
-inurl:.gov intext:contact intext:reward inurl:security
-inurl:.mil "security vulnerability report"
-inurl:.edu "responsible disclosure" reward
-inurl:.edu "vulnerability disclosure policy"
-inurl:.edu intext:"report a vulnerability"
-inurl:.edu intext:"we run a bug bounty program"
-intext:"bug bounty" (bank OR finance OR fintech)
-
-# 6. crypto / fintech
-"bug bounty" intext:"BTC" OR "ETH" OR "USDT" OR crypto OR reward
-intext:"cryptocurrency" "bug bounty"
-intext:"security vulnerability report" (exchange OR crypto OR blockchain OR token)
-
-# 7. cms / open source
-"cms" bug bounty
-"open-source security bounty"
-inurl:/wp-content/plugins/ intext:vulnerability report
-inurl:/modules/security-report/
-inurl:/.git intext:security vulnerability
-
-# 8. e-commerce / payments
-intext:"bug bounty" (shop OR store OR ecommerce)
-intext:"responsible disclosure" (payment OR checkout OR "online store")
-intext:"if you find a vulnerability" (bank OR payment)
-
-# 9. bonus recon dork (not a bounty-finder, useful once working a target)
-site:example.com ext:doc OR ext:docx OR ext:pdf OR ext:odt OR ext:rtf OR ext:ppt OR ext:pptx OR ext:csv
