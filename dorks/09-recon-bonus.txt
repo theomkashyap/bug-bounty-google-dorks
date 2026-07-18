@@ -1,0 +1,2 @@
+# recon bonus — not a bounty-finder, useful once you're already working a target: finds publicly exposed docs
+site:example.com ext:doc OR ext:docx OR ext:pdf OR ext:odt OR ext:rtf OR ext:ppt OR ext:pptx OR ext:csv
