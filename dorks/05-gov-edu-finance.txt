@@ -1,0 +1,11 @@
+# gov / edu / finance — .gov / .edu / .mil / finance, usually stricter scope, read the actual policy carefully before testing
+site:gov.uk "responsible disclosure"
+site:gov.in "vulnerability disclosure"
+inurl:.gov "responsible disclosure" OR "vulnerability disclosure program" OR "bug bounty"
+inurl:.gov intext:contact intext:reward inurl:security
+inurl:.mil "security vulnerability report"
+inurl:.edu "responsible disclosure" reward
+inurl:.edu "vulnerability disclosure policy"
+inurl:.edu intext:"report a vulnerability"
+inurl:.edu intext:"we run a bug bounty program"
+intext:"bug bounty" (bank OR finance OR fintech)
