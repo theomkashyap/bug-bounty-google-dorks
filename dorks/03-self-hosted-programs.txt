@@ -1,0 +1,12 @@
+# self-hosted programs — companies running their own disclosure page instead of a platform
+"powered by bugcrowd" -site:bugcrowd.com
+"powered by hackerone" -site:hackerone.com
+"powered by synack" -site:synack.com
+"powered by yeswehack" -site:yeswehack.com
+"powered by federacy" -site:federacy.com
+"powered by intigriti" -site:intigriti.com
+intext:"Powered by Bug Bounty HQ" OR "Powered by disclose.io"
+intext:"managed by huntr.dev"
+inurl:/hackerone.yml -site:hackerone.com
+inurl:/bug-bounty.json
+inurl:/vdp.json
