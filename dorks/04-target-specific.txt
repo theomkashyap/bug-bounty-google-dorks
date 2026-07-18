@@ -1,0 +1,5 @@
+# target specific — template dorks for digging into one company once you have a target (swap example.com for real domain)
+site:example.com inurl:security
+site:example.com "responsible disclosure"
+site:example.com filetype:pdf OR filetype:doc OR filetype:docx OR filetype:xlsx OR filetype:csv OR filetype:pptx
+site:example.com ext:txt "contact"
