@@ -1,0 +1,6 @@
+# cms / open source — CMS plugins and open-source project bounties
+"cms" bug bounty
+"open-source security bounty"
+inurl:/wp-content/plugins/ intext:vulnerability report
+inurl:/modules/security-report/
+inurl:/.git intext:security vulnerability
