@@ -64,4 +64,4 @@ site:*.target.com -site:www.target.com inurl:api
 
 ---
 
-*Part of [bug-bounty-google-dorks](https://github.com/theomkashyap/bug-bounty-google-dorks). See the main README for the full categorized dork list.* 
+*Part of [bug-bounty-google-dorks](https://github.com/theomkashyap/bug-bounty-google-dorks). See the main README for the full categorized dork list.*
