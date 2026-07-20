@@ -24,7 +24,7 @@ Operators used below:
 
 **Note on wildcards:** Google no longer supports `site:*.xx` style wildcard TLD searches (e.g. `site:*.shop`, `site:*.gov`) — they just return zero results now. These show up on basically every old dork list floating around online, but they don't work anymore, so they're left out here.
 
-How to use: pick a dork, swap in a real domain where relevant, paste into Google, sift through results. Some return junk — that's normal, dorking is trial and error. Always check the actual program page for scope/rules before reporting anything.
+**How to use:** pick a dork, swap in a real domain where relevant, paste into Google, sift through results. Some return junk — that's normal, dorking is trial and error. Always check the actual program page for scope/rules before reporting anything.
 
 ---
 
