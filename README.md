@@ -1,4 +1,4 @@
-# bug-bounty-google-dorks
+# bug-bounty-google-dorkss
 
 Google dorks for finding bug bounty / responsible disclosure programs. Cleaned up, deduplicated, and organized so it's actually usable — no broken `site:*.xx` wildcard stuff that Google stopped supporting.
 
